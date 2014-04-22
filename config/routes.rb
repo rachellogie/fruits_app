@@ -5,6 +5,14 @@ FruitsApp::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  get '/', to: 'welcome#index'
+
+  post '/fruits', to: 'fruits#create'
+
+  get '/fruits/new', to: 'fruits#new'
+
+  get '/fruits', to: 'fruits#show'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
