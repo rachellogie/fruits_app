@@ -6,7 +6,8 @@ feature "Fruits" do
     visit '/'
     expect(page).to have_content("Welcome")
     click_on "Add Fruit"
-    fill_in "fruit", with: "Banana"
+    fill_in "name", with: "Banana"
+    fill_in "description", with: "Yummy"
     click_on "add"
     expect(page).to have_content "Banana"
   end
