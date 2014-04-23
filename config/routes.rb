@@ -17,7 +17,7 @@ FruitsApp::Application.routes.draw do
 
   put '/fruits/:id', to: 'fruits#update'
 
-  get '/fruits/:id/delete', to: 'fruits#destroy'
+  delete '/fruits/:id', to: 'fruits#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
