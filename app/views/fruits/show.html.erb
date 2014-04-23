@@ -1,5 +1,7 @@
 <ul>
   <% @fruits.each do |fruit| %>
-    <li><%= fruit.name %></li>
+    <li><%= fruit.name %>:<%= fruit.description %>
+      -- <a href="/fruits/<%= fruit.id %>/edit">edit <%= "#{fruit.name}" %></a>
+      -- <a href="/fruits/<%= fruit.id %>/delete">delete <%= "#{fruit.name}" %></a></li>
   <% end %>
 </ul>

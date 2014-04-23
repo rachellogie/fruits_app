@@ -13,6 +13,12 @@ FruitsApp::Application.routes.draw do
 
   get '/fruits', to: 'fruits#show'
 
+  get 'fruits/:id/edit', to: 'fruits#edit'
+
+  put '/fruits/:id', to: 'fruits#update'
+
+  get '/fruits/:id/delete', to: 'fruits#destroy'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

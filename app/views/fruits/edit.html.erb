@@ -1,0 +1,6 @@
+<form method="post" action="/fruits/<%= @fruit.id %>">
+  <input type="hidden" name="_method" value="put">
+  Fruit: <input type="text" name="name"/>
+  Description: <input type="text" name="description"/>
+  <input type="submit" value="add"/>
+</form>
